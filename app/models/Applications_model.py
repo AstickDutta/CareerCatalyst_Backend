@@ -11,6 +11,7 @@ class ApplicationStatus(enum.Enum):
 
 
 class Application(db.Model):
+
     id = db.Column(db.Integer, primary_key=True)
     # job_id = db.Column(db.Integer, db.ForeignKey('jobs.id'), nullable=False)
     applicant_id = db.Column(db.Integer, db.ForeignKey('users.id'), nullable=False)
