@@ -1,6 +1,7 @@
 from .. import db
 from sqlalchemy import Enum
 import enum
+from datetime import datetime
 
 
 class ApplicationStatus(enum.Enum):

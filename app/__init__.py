@@ -11,9 +11,8 @@ def create_app():
 
     # Import models so they are registered with SQLAlchemy
     from app.models.user_model import User
-    from app.models.Applications_model import Application
-    # from app.models.job import Job
-    # from app.models.application import Application
+    from app.models.applications_model import Application
+    from app.models.job_model import Job
 
     # Create tables without using migrations
     with app.app_context():
