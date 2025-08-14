@@ -11,6 +11,7 @@ def create_app():
 
     # Import models so they are registered with SQLAlchemy
     from app.models.user_model import User
+    from app.models.Applications_model import Application
     # from app.models.job import Job
     # from app.models.application import Application
 
